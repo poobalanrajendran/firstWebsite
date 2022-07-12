@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>cookiesDemo</title>                                                                                                   
+</head>
+<body>
+	<div>
+		<input type=text name='salary' id='salary' value="5" />
+		<!-- 
+this emement and its value is visible in the browser but will 
+not be transfer fto the server because it is not part of 
+(child element of) the <form>element
+ -->
+	</div>
+	<form action="/firstWebsite/GlobalState?department=id&city=madurai"
+		method="post">
+		
+		<div>
+			<div>
+			<div style="width: 50%; margin: 0 auto">
+				<label for='salary'>Salary:</label> <input type=text name='salary'
+					id='salary' value="20000">
+				<!-- salary and submit -->
+			</div>
+			<div style="width: 50%; margin: 0 auto">
+				<input type="hidden" value="50000" name="bonus" id="bonus">
+				<!--  -->
+			</div>
+			<div style="width: 50%; margin: 0 auto">
+				<input type="submit" value="fetch" name="submit">
+			</div>
+			
+		</div>
+	</form>
+</body>
+</html>

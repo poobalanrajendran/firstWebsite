@@ -1,0 +1,22 @@
+package com.chainsys.miniproject.listerners;
+import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpSessionEvent;
+import javax.servlet.http.HttpSessionListener;
+public class SessionListener implements HttpSessionListener {
+
+	@Override
+	public void sessionCreated(HttpSessionEvent arg0) {
+		System.out.println("Session created");
+		HttpSession session=arg0.getSession();
+		System.out.println("Session id "+session.getId());
+		session.setMaxInactiveInterval(60*10);
+	}
+
+	@Override
+	public void sessionDestroyed(HttpSessionEvent arg0) {
+	System.out.println("Session destroyed");
+	HttpSession session=arg0.getSession();
+	System.out.println("Session id"+session.getId());
+	}
+
+}

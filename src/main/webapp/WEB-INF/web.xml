@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.4">
+  <display-name>firstWebsite</display-name>
+   <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    
+  </welcome-file-list> 
+ 
+<context-param>
+    	<param-name>AdministratorEmail</param-name>
+    	<param-value>mkyong2002@yahoo.com</param-value>
+</context-param>
+<listener>
+    <listener-class>com.chainsys.miniproject.listerners.SessionListener</listener-class>
+   </listener> 
+
+  <session-config>
+    <session-timeout>10</session-timeout>
+  </session-config>
+  <servlet>
+    <description></description>
+    <display-name>HelloWorld</display-name>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.HelloWorld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/HelloWorld</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LifeCycle</display-name>
+    <servlet-name>LifeCycle</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.LifeCycle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LifeCycle</servlet-name>
+    <url-pattern>/LifeCycle</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestParam</display-name>
+    <servlet-name>RequestParam</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.InitParam</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestParam</servlet-name>
+    <url-pattern>/RequestParam</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Employees</display-name>
+    <servlet-name>Employees</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.Employees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Employees</servlet-name>
+    <url-pattern>/Employees</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AttributesDemo</display-name>
+    <servlet-name>AttributesDemo</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.AttributesDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AttributesDemo</servlet-name>
+    <url-pattern>/AttributesDemo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SessionState</display-name>
+    <servlet-name>SessionState</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.SessionState</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionState</servlet-name>
+    <url-pattern>/SessionState</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GlobalState</display-name>
+    <servlet-name>GlobalState</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.GlobalState</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GlobalState</servlet-name>
+    <url-pattern>/GlobalState</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Result</display-name>
+    <servlet-name>Result</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.Result</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Result</servlet-name>
+    <url-pattern>/Result</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Doctors</display-name>
+    <servlet-name>Doctors</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.Doctors</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Doctors</servlet-name>
+    <url-pattern>/Doctors</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Updateemployees</display-name>
+    <servlet-name>Updateemployees</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.Updateemployees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Updateemployees</servlet-name>
+    <url-pattern>/Updateemployees</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Deleteemployees</display-name>
+    <servlet-name>Deleteemployees</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.Deleteemployees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Deleteemployees</servlet-name>
+    <url-pattern>/Deleteemployees</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Appoint</display-name>
+    <servlet-name>Appoint</servlet-name>
+    <servlet-class>com.chainsys.webapp.first.Appoint</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Appoint</servlet-name>
+    <url-pattern>/Appoint</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>SessionDemo</display-name>
+    <servlet-name>SessionDemo</servlet-name>
+    <servlet-class>com.chainsys.webapp.second.SessionDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionDemo</servlet-name>
+    <url-pattern>/SessionDemo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CookiesDemo</display-name>
+    <servlet-name>CookiesDemo</servlet-name>
+    <servlet-class>com.chainsys.webapp.second.CookiesDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookiesDemo</servlet-name>
+    <url-pattern>/CookiesDemo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SigninServlet</display-name>
+    <servlet-name>SigninServlet</servlet-name>
+    <servlet-class>com.chainsys.webapp.second.SigninServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SigninServlet</servlet-name>
+    <url-pattern>/SigninServlet</url-pattern>
+  </servlet-mapping>
+   <!-- <servlet>
+    <description></description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.chainsys.webapp.second.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping> -->
+  <servlet>
+    <description></description>
+    <display-name>Welcome</display-name>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>com.chainsys.webapp.second.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>InitParam</display-name>
+    <servlet-name>InitParam</servlet-name>
+    <servlet-class>com.chainsys.webapp.second.InitParam</servlet-class>
+  <init-param>
+            <param-name>phone</param-name>
+            <param-value>9884598845</param-value>
+  	</init-param>
+  	<init-param>
+            <param-name>mailid</param-name>
+            <param-value>abcd@xyz.com</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitParam</servlet-name>
+    <url-pattern>/InitParam</url-pattern>
+  </servlet-mapping>
+  
+  <!-- <servlet>  
+<servlet-name>Sample4demo</servlet-name>  
+<servlet-class>com.chainsys.webapp.first.Sample4demo</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>Sample4demo</servlet-name>  
+<url-pattern>Sample4demos</url-pattern>  
+</servlet-mapping>  
+  
+  <servlet>  
+<servlet-name>Sample5demo</servlet-name>  
+<servlet-class>com.chainsys.webapp.first.Sample5demo</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>Sample5demo</servlet-name>  
+<url-pattern>Sample5demo</url-pattern>  
+</servlet-mapping>   -->
+
+ <servlet>  
+<servlet-name>Sample6demo</servlet-name>  
+<servlet-class>Sample6demo</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>Sample6demo</servlet-name>  
+<url-pattern>Sample6demo</url-pattern>  
+</servlet-mapping>  
+  
+<servlet>  
+<servlet-name>Sample7demo</servlet-name>  
+<servlet-class>Sample7demo</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>Sample7demo</servlet-name>  
+<url-pattern>Sample7demo</url-pattern>  
+</servlet-mapping>  
+  
+</web-app>
